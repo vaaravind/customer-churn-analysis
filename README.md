@@ -2,7 +2,7 @@
 
 > * Portfolio Project* | Python · Pandas · Seaborn · Matplotlib
 
-\---
+
 
 ##  Project Overview
 
@@ -10,27 +10,27 @@ A telecom company is losing customers at an alarming rate of **26.5%** — above
 This project identifies *who* is leaving, *why* they are leaving, and *what the business should do* to fix it.
 
 
-\---
+
 
 ##  Repository Structure
 
 ```
 customer-churn-analysis/
 │
-├── churn_analysis.ipynb               # Main analysis notebook
+├── churn_analysis.ipynb                  # Main analysis notebook
 ├── WA_Fn-UseC_-Telco-Customer-Churn.csv  # Dataset (IBM Telco)
-├── high_risk_churned_customers.csv    # Exported at-risk segment
+├── high_risk_churned_customers.csv       # Exported at-risk segment
 │
-├── fig1_churn_rate.png                # Overall churn donut + bar
-├── fig2_contract_churn.png            # Contract type vs churn
-├── fig3_tenure_churn.png              # Tenure histogram + band chart
-├── fig4_charges_churn.png             # Monthly charges boxplot + KDE
-├── fig5_internet_payment.png          # Internet & payment method churn
+├── fig1_churn_rate.png                   # Overall churn donut + bar
+├── fig2_contract_churn.png               # Contract type vs churn
+├── fig3_tenure_churn.png                 # Tenure histogram + band chart
+├── fig4_charges_churn.png                # Monthly charges boxplot + KDE
+├── fig5_internet_payment.png             # Internet & payment method churn
 │
 └── README.md
 ```
 
-\---
+
 
 ##  Dataset
 
@@ -39,7 +39,7 @@ customer-churn-analysis/
 * **Columns:** 20 features + 1 target (`Churn`)
 * **Key Features:** `tenure`, `Contract`, `MonthlyCharges`, `InternetService`, `PaymentMethod`
 
-\---
+
 
 ##  Key Findings
 
@@ -51,9 +51,9 @@ customer-churn-analysis/
 |4|Electronic check payment users|**\~45%**|
 |5|Customers with no tech support|**\~41%**|
 
->  The highest-risk segment: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*month-to-month + fiber optic + < 12 months tenure\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\* — estimated churn probability exceeds \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*60%\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*.
+>  The highest-risk segment consists of month-to-month customers using fiber optic service with tenure under 12 months, identified through a rule-based churn risk scoring framework as the most at-risk customer group. **60%**.
 
-\---
+
 
 ##  Charts Generated
 
@@ -65,13 +65,13 @@ customer-churn-analysis/
 |Fig 4|Monthly charges vs churn — boxplot + KDE density|
 |Fig 5|Internet service \& payment method vs churn|
 
-\---
+
 
 ##  Business Recommendations
 
 ### 1\. Incentivise Long-Term Contracts  Critical
 
-Month-to-month customers churn **14× more** than 2-year contract customers.  
+Month-to-month customers showed substantially higher churn than long-term contract customers.** than 2-year contract customers.  
 → Offer 10–15% discounts on annual plans; run "Switch \& Save" campaigns.
 
 ### 2\. Build an Early Warning \& Onboarding Programme  High
@@ -84,7 +84,7 @@ Month-to-month customers churn **14× more** than 2-year contract customers.
 Fiber optic customers pay the most but churn the most — a value perception problem.  
 → NPS survey, 12-month price lock for new fiber customers, value-added bundles.
 
-\---
+
 
 ##  Tools \& Libraries
 
@@ -95,25 +95,25 @@ matplotlib   # Base plotting
 seaborn      # Statistical visualizations
 ```
 
-\---
+
 
 ##  How to Run
 
 ### Option A — Google Colab 
 
-1. Upload `churn\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_analysis.ipynb` and `WA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_Fn-UseC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_-Telco-Customer-Churn.csv` to Colab
+1. Upload `churn_analysis.ipynb` and `WA_Fn-UseC_-Telco-Customer-Churn.csv` to Colab
 2. Run all cells (`Runtime → Run all`)
 
 ### Option B — Jupyter Locally
 
 ```bash
-git clone https://github.com/YOUR\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_USERNAME/customer-churn-analysis.git
+git clone https://github.com/YOUR_USERNAME/customer-churn-analysis.git
 cd customer-churn-analysis
 pip install pandas numpy matplotlib seaborn
-jupyter notebook churn\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_analysis.ipynb
+jupyter notebook churn_analysis.ipynb
 ```
 
-\---
+
 
 ##  Results Summary
 
@@ -125,7 +125,7 @@ Business recommendations  :  3
 High-risk records flagged :  exported to CSV
 ```
 
-\---
+
 
 ##  Author
 
@@ -135,7 +135,7 @@ High-risk records flagged :  exported to CSV
 
 
 &#x20;
-LinkedIn: https://www.linkedin.com/in/v-a-aravind-6a458a207?utm\_source=share\&utm\_campaign=share\_via\&utm\_content=profile\&utm\_medium=android\_app ·
+LinkedIn: https://www.linkedin.com/in/v-a-aravind-6a458a207
 
 
 
@@ -143,7 +143,7 @@ GitHub: https://github.com/vaaravind
 
 
 
-\---
+
 
 *Dataset originally published by IBM on Kaggle. Used here for educational and portfolio purposes.*
 
