@@ -34,7 +34,7 @@ customer-churn-analysis/
 
 ##  Dataset
 
-* **Source:** [IBM Telco Customer Churn — Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+* **Source: ** [IBM Telco Customer Churn — Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 * **Rows:** 7,032 customers (after cleaning)
 * **Columns:** 20 features + 1 target (`Churn`)
 * **Key Features:** `tenure`, `Contract`, `MonthlyCharges`, `InternetService`, `PaymentMethod`
@@ -106,7 +106,7 @@ This serves as a baseline predictive model for churn classification.
 
 ## Predictive Modeling
 
-To complement the exploratory analysis, a baseline **logistic regression model** was built to predict customer churn.
+The classification performance of this algorithm is decent enough for a baseline classifier, although churn recall indicates that there is still much work to do in detecting potential churners.
 
 ### Model Performance
 
@@ -117,17 +117,16 @@ To complement the exploratory analysis, a baseline **logistic regression model**
 | Churn Recall | **48%** |
 | F1-Score | **55%** |
 
-The model performs reasonably well as a baseline classifier, though churn recall suggests there is room for improvement in identifying customers likely to leave.
 
-The model performs reasonably well as a baseline classifier, though churn recall suggests there is room for improvement in identifying customers likely to leave.
+
 
 ---
 
 ## Business Recommendations
 
-### 1. Encourage Long-Term Contracts
+### 1. Promote Long-Term Contracts
 
-Customers on month-to-month plans showed significantly higher churn compared with long-term contract customers.
+Churn rates were considerably high for consumers using monthly subscriptions than for those having long-term contracts.
 
 **Potential actions:**
 - Offer discounted annual or multi-year plans
@@ -145,42 +144,44 @@ A large share of churn occurs within the first 12 months, indicating that early 
 
 ---
 
-### 3. Review High-Churn Service Segments
+### 3.  Review Services With High Churn Rate
 
-Fiber optic customers showed both higher monthly charges and higher churn, suggesting possible dissatisfaction with pricing, service experience, or perceived value.
+Fiber optics services experienced high monthly bills and high churn rate, which implies dissatisfaction with billing or pricing structure of the service
 
 **Potential actions:**
 - Review service quality metrics
 - Reassess pricing strategy and bundled offerings
 
+## Tools & Libraries
 
-##  Tools \& Libraries
-
-```python
 | Library | Purpose |
-|--------|---------|
-| `pandas` | Data loading, cleaning, and transformation |
-| `numpy` | Numerical operations and array handling |
-| `matplotlib` | Data visualisation and plotting |
-| `seaborn` | Statistical visualisations |
-| `scikit-learn` | Predictive modeling and machine learning |
-```
+|---------|---------|
+| pandas | Data loading, cleaning, and transformation |
+| numpy | Numerical operations and array handling |
+| matplotlib | Data visualization and plotting |
+| seaborn | Statistical visualizations |
+| scikit-learn | Predictive modeling and machine learning |
 
 
+## How to Run
 
-##  How to Run
+### Option 1: Google Colab
 
-### Option A — Google Colab 
+Upload the following files to Google Colab:
 
-1. Upload `churn_analysis.ipynb` and `WA_Fn-UseC_-Telco-Customer-Churn.csv` to Colab
-2. Run all cells (`Runtime → Run all`)
+- `churn_analysis.ipynb`
+- `WA_Fn-UseC_-Telco-Customer-Churn.csv`
 
-### Option B — Jupyter Locally
+Then run all notebook cells.
+
+---
+
+### Option 2: Run Locally (Jupyter Notebook)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/customer-churn-analysis.git
+git clone https://github.com/vaaravind/customer-churn-analysis.git
 cd customer-churn-analysis
-pip install pandas numpy matplotlib seaborn
+pip install pandas numpy matplotlib seaborn scikit-learn
 jupyter notebook churn_analysis.ipynb
 ```
 
