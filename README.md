@@ -1,12 +1,13 @@
 #  Customer Churn Analysis — Telecom
 
-> * Portfolio Project* | Python · Pandas · Seaborn · Matplotlib
+> * Portfolio Project | Python · Pandas · Seaborn · Matplotlib · Scikit-learn
 
 
 
 ##  Project Overview
 
-A telecom company is losing customers at an alarming rate of **26.5%** — above the industry average.  
+This project analyzes customer churn patterns in a telecom dataset with an overall churn rate of 26.5%.
+It identifies key churn drivers, high-risk customer segments, and baseline predictive insights for retention strategy. 
 This project identifies *who* is leaving, *why* they are leaving, and *what the business should do* to fix it.
 
 
@@ -60,7 +61,7 @@ customer-churn-analysis/
 |4|Electronic check payment users|**\~45%**|
 |5|Customers with no tech support|**\~41%**|
 
->  The highest-risk segment consists of month-to-month customers using fiber optic service with tenure under 12 months, identified through a rule-based churn risk scoring framework as the most at-risk customer group. **60%**.
+>  The highest-risk segment consists of month-to-month customers using fiber optic service with tenure under 12 months, identified through a rule-based churn risk scoring framework as the most with an observed churn rate of approximately 60%.
 
 ## Rule-Based Risk Scoring Framework
 
@@ -89,20 +90,6 @@ The highest-risk segment consists of **month-to-month customers using fiber opti
 | Fig 6 | Correlation heatmap |
 | Fig 7 | Logistic regression confusion matrix |
 
-## Predictive Modeling
-
-A baseline **logistic regression model** was trained to predict customer churn.
-
-### Model Performance
-
-| Metric | Score |
-|--------|-------|
-| Accuracy | **79%** |
-| Churn Precision | **64%** |
-| Churn Recall | **48%** |
-| F1-Score | **55%** |
-
-This serves as a baseline predictive model for churn classification.
 
 ## Predictive Modeling
 
@@ -117,6 +104,7 @@ The classification performance of this algorithm is decent enough for a baseline
 | Churn Recall | **48%** |
 | F1-Score | **55%** |
 
+The classification performance is reasonable for a baseline model, though churn recall suggests further improvement is needed in identifying potential churners
 
 
 
@@ -192,7 +180,8 @@ jupyter notebook churn_analysis.ipynb
 ```
 Total customers analysed  :  7,032
 Overall churn rate        :  26.5%
-Charts generated          :  5
+Predictive model          :  Logistic Regression
+Charts generated          :  7
 Business recommendations  :  3
 High-risk records flagged :  exported to CSV
 ```
