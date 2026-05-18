@@ -75,7 +75,7 @@ A heuristic churn risk scoring model was created using observed churn indicators
 
 **High-risk threshold:** Customers scoring **70+** were flagged for retention targeting.
 
-The highest-risk segment consists of **month-to-month customers using fiber optic service with tenure under 12 months,with an observed churn rate of approximately 60%**.
+The highest-risk segment consists of **month-to-month customers using fiber optic service with tenure under 12 months, with an observed churn rate of approximately 60%**.
 
 ##  Charts Generated
 
@@ -182,7 +182,7 @@ Overall churn rate          :  26.5%
 Predictive model            :  Logistic Regression
 Charts generated            :  7
 Business recommendations    :  3
-High-risk customers flagged :  exported to CSV
+High-risk customers flagged :  Exported to CSV
 ```
 
 
