@@ -1,39 +1,38 @@
-# 📊 Customer Churn Analysis — Telecom
+#  Customer Churn Analysis — Telecom
 
-> \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*Business Analyst Portfolio Project\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\* | Python · Pandas · Seaborn · Matplotlib
+> * Portfolio Project* | Python · Pandas · Seaborn · Matplotlib
 
 \---
 
-## 🗂️ Project Overview
+##  Project Overview
 
 A telecom company is losing customers at an alarming rate of **26.5%** — above the industry average.  
 This project identifies *who* is leaving, *why* they are leaving, and *what the business should do* to fix it.
 
-This is one of the most commonly asked BA interview projects at companies like **TCS, Infosys, Accenture, Deloitte, KPMG**, and product startups.
 
 \---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 customer-churn-analysis/
 │
-├── churn\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_analysis.ipynb               # Main analysis notebook
-├── WA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_Fn-UseC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_-Telco-Customer-Churn.csv  # Dataset (IBM Telco)
-├── high\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_risk\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_churned\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_customers.csv    # Exported at-risk segment
+├── churn_analysis.ipynb               # Main analysis notebook
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv  # Dataset (IBM Telco)
+├── high_risk_churned_customers.csv    # Exported at-risk segment
 │
-├── fig1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_churn\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_rate.png                # Overall churn donut + bar
-├── fig2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_contract\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_churn.png            # Contract type vs churn
-├── fig3\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_tenure\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_churn.png              # Tenure histogram + band chart
-├── fig4\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_charges\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_churn.png             # Monthly charges boxplot + KDE
-├── fig5\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_internet\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_payment.png          # Internet \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\& payment method churn
+├── fig1_churn_rate.png                # Overall churn donut + bar
+├── fig2_contract_churn.png            # Contract type vs churn
+├── fig3_tenure_churn.png              # Tenure histogram + band chart
+├── fig4_charges_churn.png             # Monthly charges boxplot + KDE
+├── fig5_internet_payment.png          # Internet & payment method churn
 │
 └── README.md
 ```
 
 \---
 
-## 📦 Dataset
+##  Dataset
 
 * **Source:** [IBM Telco Customer Churn — Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 * **Rows:** 7,032 customers (after cleaning)
@@ -42,7 +41,7 @@ customer-churn-analysis/
 
 \---
 
-## 🔍 Key Findings
+##  Key Findings
 
 |#|Finding|Churn Rate|
 |-|-|-|
@@ -52,11 +51,11 @@ customer-churn-analysis/
 |4|Electronic check payment users|**\~45%**|
 |5|Customers with no tech support|**\~41%**|
 
-> 💡 The highest-risk segment: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*month-to-month + fiber optic + < 12 months tenure\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\* — estimated churn probability exceeds \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*60%\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*.
+>  The highest-risk segment: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*month-to-month + fiber optic + < 12 months tenure\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\* — estimated churn probability exceeds \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*60%\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*.
 
 \---
 
-## 📊 Charts Generated
+##  Charts Generated
 
 |Figure|Description|
 |-|-|
@@ -68,26 +67,26 @@ customer-churn-analysis/
 
 \---
 
-## 🎯 Business Recommendations
+##  Business Recommendations
 
-### 1\. Incentivise Long-Term Contracts 🔴 Critical
+### 1\. Incentivise Long-Term Contracts  Critical
 
 Month-to-month customers churn **14× more** than 2-year contract customers.  
 → Offer 10–15% discounts on annual plans; run "Switch \& Save" campaigns.
 
-### 2\. Build an Early Warning \& Onboarding Programme 🟠 High
+### 2\. Build an Early Warning \& Onboarding Programme  High
 
 47% of churn happens in the first 12 months — customers leave before becoming loyal.  
 → 90-day onboarding journey; CRM flags for at-risk customers (< 12 mo + M2M + charges > $70).
 
-### 3\. Review Fiber Optic Pricing \& Service Quality 🟠 High
+### 3\. Review Fiber Optic Pricing \& Service Quality  High
 
 Fiber optic customers pay the most but churn the most — a value perception problem.  
 → NPS survey, 12-month price lock for new fiber customers, value-added bundles.
 
 \---
 
-## 🛠️ Tools \& Libraries
+##  Tools \& Libraries
 
 ```python
 pandas       # Data loading, cleaning, transformation
@@ -98,7 +97,7 @@ seaborn      # Statistical visualizations
 
 \---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Option A — Google Colab 
 
@@ -116,7 +115,7 @@ jupyter notebook churn\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_analysis.ipynb
 
 \---
 
-## 📈 Results Summary
+##  Results Summary
 
 ```
 Total customers analysed  :  7,032
@@ -128,12 +127,12 @@ High-risk records flagged :  exported to CSV
 
 \---
 
-## 👤 Author
+##  Author
 
 **V A Aravind**
 
 &#x20;
-Business Analyst | Data Analytics Enthusiast
+
 
 &#x20;
 LinkedIn: https://www.linkedin.com/in/v-a-aravind-6a458a207?utm\_source=share\&utm\_campaign=share\_via\&utm\_content=profile\&utm\_medium=android\_app ·
