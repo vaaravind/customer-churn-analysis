@@ -16,19 +16,19 @@ It identifies key churn drivers, high-risk customer segments, and baseline predi
 ##  Repository Structure
 
 ```
-customer-churn-analysis
-│
-├── churn_analysis.ipynb
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv
-├── high_risk_churned_customers.csv
-├── fig1_churn_rate.png
-├── fig2_contract_churn.png
-├── fig3_tenure_churn.png
-├── fig4_charges_churn.png
-├── fig5_internet_payment.png
-├── fig6_correlation_heatmap.png
-├── fig7_logistic_regression_confusion_matrix.png
-└── README.md
+ 📁 customer-churn-analysis/
+├── churn_analysis.ipynb                            # Main analysis notebook
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv            # Dataset
+├── high_risk_churned_customers.csv                 # Exported high-risk customers
+├── fig1_churn_rate.png                             # Overall churn analysis
+├── fig2_contract_churn.png                         # Contract churn analysis
+├── fig3_tenure_churn.png                           # Tenure churn analysis
+├── fig4_charges_churn.png                          # Monthly charges analysis
+├── fig5_internet_payment.png                       # Internet/payment churn analysis
+├── fig6_correlation_heatmap.png                    # Correlation matrix
+├── fig7_logistic_regression_confusion_matrix.png   # Logistic regression confusion matrix
+└── README.md                                       # Project documentation
+
 ```
 
 
